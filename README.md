@@ -40,7 +40,7 @@ We set up a framework which contains 7 CNNs and 2 resnets both in encoder and de
 We set up several generative adversarial networks include Wasserstein-DCGAN model.
 
 ### Combine GAN with VAE
-- __Baseline__
+- __Baseline__  
 As we decided to process Wasserstein-DCGAN and VAE, we selected Linear Autoencoder, Linear Variational Autoencoder, Linear GAN, Linear WGAN as our baselines. Those models illustrate the previous preparing work we had done.
-- __Different combination of model__
+- __Different combination of model__  
 In order to verify the best combination of GAN-VAE, we prepare different types of combination which contain a type of autoencoder and a type of GAN.
