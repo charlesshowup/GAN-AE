@@ -5,14 +5,15 @@ __Table of Contents__
 We present a general learning framework that combines a Deep Convolutional GAN(DCGAN) with a Conditional Variational Auto-Encoder (DCVAE). First, we find a solution that Wasserstein-DCGANs solve the gradient vanishing problem to a certain extent, but the generated results are usually blurry. Second, we adopt a VAE to remove useless features from real images, reducing noises of images. We further experiment with natural images of faces, flowers that the proposed models are capable of generating sharp and diverse samples. 
 
 ## Why we made Wasserstein-DCGAN + Conv-VAE
-VAE model is often used to process noise reduction of music, videos and pictures because of its ability of throwing unnecessary features. 
+> VAE model is often used to process noise reduction of music, videos and pictures because of its ability of throwing unnecessary features. 
 Unfortunately, when the picture through the VAE model, we often get a blurry picture though our model is well-done. Besides, when we input a random noise to the decoder, we can still get a unsharp picture which conform to the distribution of real images.
 Following, we summarize the pros and cons about VAE model.
-Pros: 
+
+__Pros:__
 - Principled method to generative models
 - Allow q(z|x) to infer other tasks
 
-Cons: 
+__Cons:__
 - Samples blurrier than GAN and low quality
 - Maximize lower bound of likelihood
 Architecture of GAN
@@ -23,7 +24,8 @@ Cons:
 - Hard to train because of its instability
 - Can’t solve inference queries
 Therefore, we image that utilizing the advantages of VAE and GAN to solve the cons between them. In the article, we use VAE model to decrease the influence of noise in the photos, then use GAN to create new pictures. In this case, GAN will accept fewer insignificant features if we input the pictures which were processed by VAE model. Such process not only depends on the ability of VAE, but also decrease the risk of collapse of training GAN.
-> To forestall great economic losses, it is significant to create a method to consumption of generate virtual face. We optimized VAE model and use the picture which output from GAN as the input of VAE. Then, we can generate and modify some blurry photos.
+
+To forestall great economic losses, it is significant to create a method to consumption of generate virtual face. We optimized VAE model and use the picture which output from GAN as the input of VAE. Then, we can generate and modify some blurry photos.
 
 ## Experiments
 ### Data
