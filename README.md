@@ -30,7 +30,7 @@ To forestall great economic losses, it is significant to create a method to cons
 ## Experiments
 ### Data
 - __Prepare dataset__  
-We selected two datasets, [FashionMNIST](https://github.com/zalandoresearch/fashion-mnist/blob/master/README.md), [CelebA](https://www.google.com/search?client=safari&rls=en&q=CelebA&ie=UTF-8&oe=UTF-8). In FashionMNIST which includes several types of clothes, it has about 60,000 samples. Besides, CelebA is a dataset which contains 202,599 face images
+We selected two datasets, [FashionMNIST](https://github.com/zalandoresearch/fashion-mnist/blob/master/README.md), [CelebA](https://www.google.com/search?client=safari&rls=en&q=CelebA&ie=UTF-8&oe=UTF-8). In FashionMNIST which includes several types of clothes, it has about 60,000 samples. Besides, CelebA is a dataset which contains 202,599 face images.
 
 - __Convolutional Neural Network (CNN)__  
 We combine CNN with VAE and GAN, meaning that the result we get can be sharper and more reliable.
