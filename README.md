@@ -32,11 +32,11 @@ To forestall great economic losses, it is significant to create a method to cons
 - __Prepare dataset__
 We selected two datasets, [FashionMNIST](https://github.com/zalandoresearch/fashion-mnist/blob/master/README.md), [CelebA](https://www.google.com/search?client=safari&rls=en&q=CelebA&ie=UTF-8&oe=UTF-8). In FashionMNIST which includes several types of clothes, it has about 60,000 samples. Besides, CelebA is a dataset which contains 202,599 face images
 
-- __Convolutional Neural Network (CNN)__
+- __Convolutional Neural Network (CNN)__  
 We combine CNN with VAE and GAN, meaning that the result we get can be sharper and more reliable.
-- __Variational Autoencoder (VAE)__
+- __Variational Autoencoder (VAE)__  
 We set up a framework which contains 7 CNNs and 2 resnets both in encoder and decoder. 
-- __Generative Adversarial Network (GAN)__
+- __Generative Adversarial Network (GAN)__  
 We set up several generative adversarial networks include Wasserstein-DCGAN model.
 
 ### Combine GAN with VAE
