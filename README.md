@@ -2,6 +2,7 @@
 This object use AE to help GAN's elevate training of discriminator 
 
 __Table of Contents__
+
 We present a general learning framework that combines a Deep Convolutional GAN(DCGAN) with a Conditional Variational Auto-Encoder (DCVAE). First, we find a solution that Wasserstein-DCGANs solve the gradient vanishing problem to a certain extent, but the generated results are usually blurry. Second, we adopt a VAE to remove useless features from real images, reducing noises of images. We further experiment with natural images of faces, flowers that the proposed models are capable of generating sharp and diverse samples. 
 
 ## Why we made Wasserstein-DCGAN + Conv-VAE
